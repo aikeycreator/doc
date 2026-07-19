@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoodFrame Support</title>
+  <meta name="description" content="Support and troubleshooting for MoodFrame, a guided camera for iPhone.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0a09;
+      --panel: #151310;
+      --panel-high: #1e1a16;
+      --text: #fff8ed;
+      --muted: #d7cbbc;
+      --dim: #9b9084;
+      --primary: #f5bd72;
+      --border: #3a3128;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 74% 8%, rgba(245, 189, 114, 0.16), transparent 34rem),
+        linear-gradient(180deg, #18130e 0%, var(--bg) 45%, #060504 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    main { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0; }
+    .card {
+      padding: clamp(24px, 5vw, 52px);
+      background: rgba(21, 19, 16, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 28px 90px rgba(0, 0, 0, 0.38);
+    }
+    .brand { color: var(--primary); font-weight: 750; letter-spacing: 0.01em; }
+    h1 {
+      margin: 22px 0 14px;
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.04;
+      letter-spacing: -0.045em;
+    }
+    .summary { max-width: 700px; margin: 0 0 36px; color: var(--muted); font-size: 19px; }
+    section { padding: 28px 0; border-top: 1px solid var(--border); }
+    h2 { margin: 0 0 12px; color: var(--primary); font-size: 22px; line-height: 1.25; }
+    h3 { margin: 22px 0 8px; color: var(--text); font-size: 17px; }
+    p { margin: 0 0 14px; color: var(--muted); }
+    ol, ul { margin: 12px 0 0; padding-left: 22px; color: var(--muted); }
+    li + li { margin-top: 8px; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .notice {
+      padding: 18px;
+      background: var(--panel-high);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+    footer { margin-top: 26px; color: var(--dim); font-size: 14px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <div class="brand">◐ &nbsp;MoodFrame</div>
+      <h1>Support</h1>
+      <p class="summary">
+        Need help with the live camera, a look, or saving a photo? Start here or contact us directly.
+      </p>
+
+      <section>
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Open MoodFrame and allow Camera access.</li>
+          <li>Choose a look from the style strip or Discover Styles.</li>
+          <li>Use the guide to compose, then drag the divider to compare the original and styled view.</li>
+          <li>Take the photo and choose <strong>Save Filtered Photo</strong> when you want it added to Photos.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Camera Troubleshooting</h2>
+        <h3>The camera preview is unavailable</h3>
+        <p>
+          Open iPhone Settings, find MoodFrame, and enable Camera access. Then return to the app.
+          MoodFrame requires an iPhone running iOS 17 or later.
+        </p>
+
+        <h3>A saved photo does not appear in Photos</h3>
+        <p>
+          After taking a photo, tap <strong>Save Filtered Photo</strong> and allow Add Photos Only access.
+          You can review this permission in iPhone Settings under MoodFrame.
+        </p>
+
+        <h3>The live preview feels slow</h3>
+        <p>
+          Close other camera-intensive apps and let the iPhone cool if it is warm. MoodFrame processes
+          the live look on-device, so thermal or low-power conditions can temporarily affect preview speed.
+        </p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>
+          MoodFrame processes camera frames and photos on your iPhone. It has no account, analytics,
+          advertising, tracking, or photo-upload service.
+        </p>
+        <p><a href="privacy-policy.html">Read the MoodFrame Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p class="notice">
+          Email <a href="mailto:ai.key.creator@gmail.com">ai.key.creator@gmail.com</a> with your iPhone
+          model, iOS version, and a short description of what happened. Please do not send private photos.
+        </p>
+      </section>
+    </article>
+
+    <footer>MoodFrame Support · AICreator</footer>
+  </main>
+</body>
+</html>
